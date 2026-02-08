@@ -28,7 +28,7 @@ namespace TeamProject
         {
             if (txtBox.Text.Replace(" ", "") != "") 
             {
-         
+               label1.Text = _state.Count.ToString();
                 listBox.Items.Add(txtBox.Text);
                 _state.Add(txtBox.Text);        
                 txtBox.Text = "";
@@ -39,6 +39,11 @@ namespace TeamProject
         {
             if (listBox.Text != "") 
                 listBox.Items.RemoveAt(listBox.SelectedIndex);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
