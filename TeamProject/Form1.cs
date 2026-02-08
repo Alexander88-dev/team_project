@@ -28,7 +28,7 @@ namespace TeamProject
         {
             if (txtBox.Text.Replace(" ", "") != "") 
             {
-               label1.Text = _state.Count.ToString();
+               label1.Text = (_state.Count+1).ToString();
                 listBox.Items.Add(txtBox.Text);
                 _state.Add(txtBox.Text);        
                 txtBox.Text = "";
